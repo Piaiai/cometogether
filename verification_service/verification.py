@@ -1,3 +1,5 @@
+import os
+import sys
 import csv
 import copy
 import logging
@@ -8,6 +10,8 @@ import mediapipe as mp
 
 from hand_gesture_verification.model.keypoint_classifier.keypoint_classifier import KeyPointClassifier
 from verification_service.face_identity import FaceIdentity
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 
 logging.basicConfig(format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 

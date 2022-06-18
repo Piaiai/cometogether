@@ -190,8 +190,8 @@ def align_image(img):
 
 nn4_small2_pretrained = create_model()
 nn4_small2_pretrained.load_weights('weights/nn4.small2.v1.h5')
-img1 = load_image(r'C:\Users\dmytro.hlushenkov\Documents\4_course\diploma\cometogether\verification_service\img.jpg')
-img2 = load_image(r'C:\Users\dmytro.hlushenkov\Documents\4_course\diploma\cometogether\verification_service\img2.jpg')
+img1 = load_image(r'/verification_service/img.jpg')
+img2 = load_image(r'/verification_service/img2.jpg')
 
 img1 = align_image(img1)
 img1 = (img1 / 255.).astype(np.float32)
